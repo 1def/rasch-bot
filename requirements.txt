@@ -1,0 +1,25 @@
+# Telegram bot uchun
+python-telegram-bot==20.7
+python-dotenv==1.0.0
+
+# Rasch tahlil uchun
+pandas==2.1.4
+numpy==1.24.3
+scipy==1.11.4
+scikit-learn==1.3.2
+
+# PDF yaratish uchun
+reportlab==4.0.7
+matplotlib==3.8.2
+seaborn==0.13.0
+
+# R integratsiya uchun
+rpy2==3.5.12
+
+# Web framework (keyinchalik sayt uchun)
+fastapi==0.104.1
+uvicorn==0.24.0
+
+# Boshqa
+python-multipart==0.0.6
+aiofiles==23.2.1

@@ -1,0 +1,338 @@
+{
+  "items": [
+    {
+      "item_id": "Item1",
+      "difficulty": -1.9
+    },
+    {
+      "item_id": "Item2",
+      "difficulty": -1.8
+    },
+    {
+      "item_id": "Item3",
+      "difficulty": -1.7
+    },
+    {
+      "item_id": "Item4",
+      "difficulty": -1.6
+    },
+    {
+      "item_id": "Item5",
+      "difficulty": -1.5
+    },
+    {
+      "item_id": "Item6",
+      "difficulty": -1.4
+    },
+    {
+      "item_id": "Item7",
+      "difficulty": -1.3
+    },
+    {
+      "item_id": "Item8",
+      "difficulty": -1.2
+    },
+    {
+      "item_id": "Item9",
+      "difficulty": -1.1
+    },
+    {
+      "item_id": "Item10",
+      "difficulty": -1.0
+    },
+    {
+      "item_id": "Item11",
+      "difficulty": -0.9
+    },
+    {
+      "item_id": "Item12",
+      "difficulty": -0.8
+    },
+    {
+      "item_id": "Item13",
+      "difficulty": -0.7
+    },
+    {
+      "item_id": "Item14",
+      "difficulty": -0.6
+    },
+    {
+      "item_id": "Item15",
+      "difficulty": -0.5
+    },
+    {
+      "item_id": "Item16",
+      "difficulty": -0.4
+    },
+    {
+      "item_id": "Item17",
+      "difficulty": -0.3
+    },
+    {
+      "item_id": "Item18",
+      "difficulty": -0.2
+    },
+    {
+      "item_id": "Item19",
+      "difficulty": -0.1
+    },
+    {
+      "item_id": "Item20",
+      "difficulty": 0.0
+    },
+    {
+      "item_id": "Item21",
+      "difficulty": 0.1
+    },
+    {
+      "item_id": "Item22",
+      "difficulty": 0.2
+    },
+    {
+      "item_id": "Item23",
+      "difficulty": 0.3
+    },
+    {
+      "item_id": "Item24",
+      "difficulty": 0.4
+    },
+    {
+      "item_id": "Item25",
+      "difficulty": 0.5
+    },
+    {
+      "item_id": "Item26",
+      "difficulty": 0.6
+    },
+    {
+      "item_id": "Item27",
+      "difficulty": 0.7
+    },
+    {
+      "item_id": "Item28",
+      "difficulty": 0.8
+    },
+    {
+      "item_id": "Item29",
+      "difficulty": 0.9
+    },
+    {
+      "item_id": "Item30",
+      "difficulty": 1.0
+    },
+    {
+      "item_id": "Item31",
+      "difficulty": 1.1
+    },
+    {
+      "item_id": "Item32",
+      "difficulty": 1.2
+    },
+    {
+      "item_id": "Item33",
+      "difficulty": 1.3
+    },
+    {
+      "item_id": "Item34",
+      "difficulty": 1.4
+    },
+    {
+      "item_id": "Item35",
+      "difficulty": 1.5
+    },
+    {
+      "item_id": "Item36",
+      "difficulty": 1.6
+    },
+    {
+      "item_id": "Item37",
+      "difficulty": 1.7
+    },
+    {
+      "item_id": "Item38",
+      "difficulty": 1.8
+    },
+    {
+      "item_id": "Item39",
+      "difficulty": 1.9
+    },
+    {
+      "item_id": "Item40",
+      "difficulty": 2.0
+    },
+    {
+      "item_id": "Item41",
+      "difficulty": 2.1
+    },
+    {
+      "item_id": "Item42",
+      "difficulty": 2.2
+    },
+    {
+      "item_id": "Item43",
+      "difficulty": 2.3
+    },
+    {
+      "item_id": "Item44",
+      "difficulty": 2.4
+    },
+    {
+      "item_id": "Item45",
+      "difficulty": 2.5
+    },
+    {
+      "item_id": "Item46",
+      "difficulty": 2.6
+    },
+    {
+      "item_id": "Item47",
+      "difficulty": 2.7
+    },
+    {
+      "item_id": "Item48",
+      "difficulty": 2.8
+    },
+    {
+      "item_id": "Item49",
+      "difficulty": 2.9
+    },
+    {
+      "item_id": "Item50",
+      "difficulty": 3.0
+    },
+    {
+      "item_id": "Item51",
+      "difficulty": 3.1
+    },
+    {
+      "item_id": "Item52",
+      "difficulty": 3.2
+    },
+    {
+      "item_id": "Item53",
+      "difficulty": 3.3
+    },
+    {
+      "item_id": "Item54",
+      "difficulty": 3.4
+    },
+    {
+      "item_id": "Item55",
+      "difficulty": 3.5
+    }
+  ],
+  "persons": [
+    {
+      "person_index": 1,
+      "eap": -0.9,
+      "se": 0.11
+    },
+    {
+      "person_index": 2,
+      "eap": -0.8,
+      "se": 0.12
+    },
+    {
+      "person_index": 3,
+      "eap": -0.7,
+      "se": 0.13
+    },
+    {
+      "person_index": 4,
+      "eap": -0.6,
+      "se": 0.14
+    },
+    {
+      "person_index": 5,
+      "eap": -0.5,
+      "se": 0.15
+    },
+    {
+      "person_index": 6,
+      "eap": -0.4,
+      "se": 0.16
+    },
+    {
+      "person_index": 7,
+      "eap": -0.3,
+      "se": 0.17
+    },
+    {
+      "person_index": 8,
+      "eap": -0.2,
+      "se": 0.18
+    },
+    {
+      "person_index": 9,
+      "eap": -0.1,
+      "se": 0.19
+    },
+    {
+      "person_index": 10,
+      "eap": 0.0,
+      "se": 0.2
+    },
+    {
+      "person_index": 11,
+      "eap": 0.1,
+      "se": 0.21
+    },
+    {
+      "person_index": 12,
+      "eap": 0.2,
+      "se": 0.22
+    },
+    {
+      "person_index": 13,
+      "eap": 0.3,
+      "se": 0.23
+    },
+    {
+      "person_index": 14,
+      "eap": 0.4,
+      "se": 0.24
+    },
+    {
+      "person_index": 15,
+      "eap": 0.5,
+      "se": 0.25
+    },
+    {
+      "person_index": 16,
+      "eap": 0.6,
+      "se": 0.26
+    },
+    {
+      "person_index": 17,
+      "eap": 0.7,
+      "se": 0.27
+    },
+    {
+      "person_index": 18,
+      "eap": 0.8,
+      "se": 0.28
+    },
+    {
+      "person_index": 19,
+      "eap": 0.9,
+      "se": 0.29
+    },
+    {
+      "person_index": 20,
+      "eap": 1.0,
+      "se": 0.3
+    },
+    {
+      "person_index": 21,
+      "eap": 1.1,
+      "se": 0.31
+    }
+  ],
+  "fit": {
+    "logLik": -186.808894,
+    "AIC": 485.617787,
+    "BIC": 544.111044,
+    "n_obs": 21,
+    "n_items": 55
+  }
+}
