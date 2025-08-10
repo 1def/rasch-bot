@@ -2,10 +2,12 @@
 """
 Rasch Telegram Bot - Asosiy bot fayli
 Bu bot Rasch modeli tahlilini amalga oshiradi va natijalarni PDF formatida qaytaradi.
+Milliy sertifikat kabi ball berish tizimi bilan.
 """
 
 import os
 import logging
+import json
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 from app.services.scoring import RaschAnalyzer
@@ -29,110 +31,211 @@ class RaschTelegramBot:
     async def start(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         """Start buyrug'i"""
         welcome_message = """
-🤖 Rasch Modeli Tahlil Botiga xush kelibsiz!
+🤖 <b>Rasch Modeli Tahlil Boti</b>
 
-📊 Bu bot sizga Rasch modeli tahlilini amalga oshirishda yordam beradi.
+Bu bot Rasch modeli yordamida test natijalarini tahlil qiladi va milliy sertifikat kabi ball berish tizimi bilan natijalarni taqdim etadi.
 
-📋 Foydalanish:
-1. CSV fayl yuboring (savollar va javoblar)
-2. Bot avtomatik tahlil qiladi
-3. Natijalar PDF formatida qaytariladi
+📋 <b>Mavjud buyruqlar:</b>
+/start - Bot haqida ma'lumot
+/help - Yordam
+/analyze - Test natijalarini tahlil qilish
 
-📈 Natijalar:
-- Item qiyinchilik darajalari
-- Shaxs ballari
-- Model mosligi statistikasi
-- Grafik ko'rinishlar
+📊 <b>Ball berish tizimi:</b>
+🏆 Ajoyib (A): 90-100 ball
+🥈 Yaxshi (B): 75-89 ball  
+🥉 Qoniqarli (C): 60-74 ball
+📚 Yaxshilash kerak (D): 0-59 ball
 
-/help - Yordam olish uchun
+📝 <b>Foydalanish:</b>
+Test natijalarini CSV formatida yuboring yoki /analyze buyrug'ini bosing.
         """
-        await update.message.reply_text(welcome_message)
+        await update.message.reply_html(welcome_message)
     
-    async def help_command(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+    async def help(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         """Yordam buyrug'i"""
-        help_text = """
-📖 Bot haqida ma'lumot:
+        help_message = """
+📖 <b>Yordam</b>
 
-🔹 CSV fayl formati:
-- Birinchi qator: savol nomlari
-- Keyingi qatorlar: har bir shaxsning javoblari
-- 0 = noto'g'ri, 1 = to'g'ri
+🔹 <b>Test natijalarini yuborish:</b>
+CSV formatida response matrix yuboring. Masalan:
+1,1,0,1,0
+0,1,1,0,1
+1,0,1,1,0
 
-🔹 Natijalar:
-- rasch_result.json: Tahlil natijalari
-- rasch_report.pdf: Hisobot fayli
+🔹 <b>Natijalar:</b>
+- Har bir talabgor uchun batafsil ball
+- Sertifikat darajasi (A, B, C, D)
+- Natija kategoriyasi
+- Shaxsiy tavsiyalar
+- PDF hisobot
 
-🔹 Buyruqlar:
-/start - Botni ishga tushirish
-/help - Yordam olish
-/status - Bot holati
+🔹 <b>Ball berish tizimi:</b>
+- Ajoyib (A): 90-100 ball
+- Yaxshi (B): 75-89 ball
+- Qoniqarli (C): 60-74 ball
+- Yaxshilash kerak (D): 0-59 ball
 
-📞 Savollar uchun: @admin
+🔹 <b>Qo'shimcha ma'lumot:</b>
+- Savollar qiyinchilik darajasi
+- Umumiy statistika
+- Tavsiyalar
         """
-        await update.message.reply_text(help_text)
+        await update.message.reply_html(help_message)
     
-    async def handle_csv(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
-        """CSV faylni qayta ishlash"""
+    async def analyze(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+        """Tahlil buyrug'i"""
+        await update.message.reply_text(
+            "📊 Test natijalarini CSV formatida yuboring.\n\n"
+            "Format: har bir qator bir talabgorning javoblari\n"
+            "Masalan:\n"
+            "1,1,0,1,0\n"
+            "0,1,1,0,1\n"
+            "1,0,1,1,0"
+        )
+    
+    async def handle_matrix(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+        """Response matrix ni qabul qilish va tahlil qilish"""
         try:
-            # Faylni yuklab olish
-            file = await context.bot.get_file(update.message.document.file_id)
-            file_path = f"temp_{update.message.from_user.id}.csv"
-            await file.download_to_drive(file_path)
+            # Xabar matnini olish
+            text = update.message.text.strip()
             
-            await update.message.reply_text("📊 Fayl yuklandi. Tahlil boshlandi...")
+            # CSV formatini tekshirish
+            if not self._is_valid_csv_matrix(text):
+                await update.message.reply_text(
+                    "❌ Noto'g'ri format! CSV formatida response matrix yuboring.\n\n"
+                    "To'g'ri format:\n"
+                    "1,1,0,1,0\n"
+                    "0,1,1,0,1\n"
+                    "1,0,1,1,0"
+                )
+                return
             
-            # Rasch tahlilini amalga oshirish
-            results = self.rasch_analyzer.analyze(file_path)
+            # Matrix ni parse qilish
+            matrix = self._parse_csv_matrix(text)
+            
+            # Tahlil qilish
+            await update.message.reply_text("🔄 Tahlil amalga oshirilmoqda...")
+            
+            results = self.rasch_analyzer.analyze_response_matrix(matrix)
             
             # PDF hisobot yaratish
-            pdf_path = self.pdf_generator.generate_report(results, f"report_{update.message.from_user.id}.pdf")
+            pdf_path = self.pdf_generator.generate_rasch_report(results)
             
-            # Natijalarni yuborish
+            # Natijalarni qisqacha ko'rsatish
+            summary = self._generate_summary(results)
+            
+            await update.message.reply_html(summary)
+            
+            # PDF faylni yuborish
             with open(pdf_path, 'rb') as pdf_file:
                 await update.message.reply_document(
                     document=pdf_file,
-                    caption="📈 Rasch modeli tahlil natijalari"
+                    filename="rasch_analysis_report.pdf",
+                    caption="📊 Rasch modeli tahlili hisoboti"
                 )
             
-            # Vaqtinchalik fayllarni o'chirish
-            os.remove(file_path)
-            os.remove(pdf_path)
-            
+            # JSON natijalarni ham yuborish
+            json_path = "./results/rasch_result.json"
+            with open(json_path, 'rb') as json_file:
+                await update.message.reply_document(
+                    document=json_file,
+                    filename="rasch_results.json",
+                    caption="📋 Batafsil natijalar (JSON)"
+                )
+                
         except Exception as e:
-            logger.error(f"Xatolik: {e}")
-            await update.message.reply_text("❌ Xatolik yuz berdi. Iltimos, qaytadan urinib ko'ring.")
+            logger.error(f"Tahlil xatosi: {str(e)}")
+            await update.message.reply_text(f"❌ Xatolik yuz berdi: {str(e)}")
     
-    async def status(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
-        """Bot holati"""
-        status_text = """
-🟢 Bot faol holatda
+    def _is_valid_csv_matrix(self, text: str) -> bool:
+        """CSV matrix formatini tekshirish"""
+        lines = text.strip().split('\n')
+        if len(lines) < 2:
+            return False
+        
+        # Birinchi qatorni tekshirish
+        first_line = lines[0].strip()
+        if not first_line:
+            return False
+        
+        # Har bir qatorni tekshirish
+        for line in lines:
+            line = line.strip()
+            if not line:
+                continue
+            
+            # Faqat 0 va 1 larni tekshirish
+            values = line.split(',')
+            for value in values:
+                if value.strip() not in ['0', '1']:
+                    return False
+        
+        return True
+    
+    def _parse_csv_matrix(self, text: str) -> list:
+        """CSV matrix ni parse qilish"""
+        lines = text.strip().split('\n')
+        matrix = []
+        
+        for line in lines:
+            line = line.strip()
+            if line:
+                row = [int(x.strip()) for x in line.split(',')]
+                matrix.append(row)
+        
+        return matrix
+    
+    def _generate_summary(self, results: dict) -> str:
+        """Natijalar qisqacha ko'rsatish"""
+        persons = results.get('persons', [])
+        overall_stats = results.get('detailed_analysis', {}).get('overall_statistics', {})
+        
+        # Eng yaxshi 5 talabgor
+        top_5 = sorted(persons, key=lambda x: x.get('certification_score', 0), reverse=True)[:5]
+        
+        summary = f"""
+📊 <b>TAHLIL NATIJALARI</b>
 
-📊 Tahlil qilingan fayllar: 0
-📈 Natijalar: Tayyor
-🔧 Tizim: Ishga tushgan
+👥 <b>Umumiy ma'lumot:</b>
+• Jami talabgorlar: {overall_stats.get('total_participants', 'N/A')}
+• Jami savollar: {overall_stats.get('total_items', 'N/A')}
+• O'rtacha ball: {overall_stats.get('average_score', 0):.2f}
 
-✅ Barcha funksiyalar ishlayapti
+🏆 <b>Eng yaxshi 5 talabgor:</b>
+"""
+        
+        for i, person in enumerate(top_5, 1):
+            summary += f"{i}. Talabgor {person.get('person_index')}: {person.get('certification_score')} ball ({person.get('certification_level')})\n"
+        
+        summary += f"""
+📈 <b>Ball berish tizimi:</b>
+• Ajoyib (A): 90-100 ball
+• Yaxshi (B): 75-89 ball
+• Qoniqarli (C): 60-74 ball
+• Yaxshilash kerak (D): 0-59 ball
+
+📄 Batafsil ma'lumot PDF va JSON fayllarida.
         """
-        await update.message.reply_text(status_text)
+        
+        return summary
 
-def main():
+async def main():
     """Asosiy funksiya"""
     bot = RaschTelegramBot()
     
-    # Bot ilovasini yaratish
+    # Bot yaratish
     application = Application.builder().token(TOKEN).build()
     
-    # Buyruqlarni qo'shish
+    # Handler larni qo'shish
     application.add_handler(CommandHandler("start", bot.start))
-    application.add_handler(CommandHandler("help", bot.help_command))
-    application.add_handler(CommandHandler("status", bot.status))
+    application.add_handler(CommandHandler("help", bot.help))
+    application.add_handler(CommandHandler("analyze", bot.analyze))
+    application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, bot.handle_matrix))
     
-    # CSV fayllarni qayta ishlash
-    application.add_handler(MessageHandler(filters.Document.ALL, bot.handle_csv))
-    
-    # Botni ishga tushirish
-    logger.info("Bot ishga tushmoqda...")
-    application.run_polling()
+    # Bot ni ishga tushirish
+    logger.info("Bot ishga tushirilmoqda...")
+    await application.run_polling()
 
 if __name__ == '__main__':
-    main()
+    import asyncio
+    asyncio.run(main())

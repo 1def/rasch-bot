@@ -2,337 +2,590 @@
   "items": [
     {
       "item_id": "Item1",
-      "difficulty": -1.9
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 1 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item2",
-      "difficulty": -1.8
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 2 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item3",
-      "difficulty": -1.7
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 3 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item4",
-      "difficulty": -1.6
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 4 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item5",
-      "difficulty": -1.5
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 5 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item6",
-      "difficulty": -1.4
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 6 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item7",
-      "difficulty": -1.3
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 7 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item8",
-      "difficulty": -1.2
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 8 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item9",
-      "difficulty": -1.1
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 9 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item10",
-      "difficulty": -1.0
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 10 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item11",
-      "difficulty": -0.9
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 11 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item12",
-      "difficulty": -0.8
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 12 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item13",
-      "difficulty": -0.7
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 13 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item14",
-      "difficulty": -0.6
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 14 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item15",
-      "difficulty": -0.5
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 15 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item16",
-      "difficulty": -0.4
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 16 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item17",
-      "difficulty": -0.3
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 17 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item18",
-      "difficulty": -0.2
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 18 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item19",
-      "difficulty": -0.1
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 19 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item20",
-      "difficulty": 0.0
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 20 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item21",
-      "difficulty": 0.1
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 21 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item22",
-      "difficulty": 0.2
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 22 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item23",
-      "difficulty": 0.3
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 23 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item24",
-      "difficulty": 0.4
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 24 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item25",
-      "difficulty": 0.5
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 25 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item26",
-      "difficulty": 0.6
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 26 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item27",
-      "difficulty": 0.7
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 27 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item28",
-      "difficulty": 0.8
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 28 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item29",
-      "difficulty": 0.9
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 29 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item30",
-      "difficulty": 1.0
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 30 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item31",
-      "difficulty": 1.1
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 31 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item32",
-      "difficulty": 1.2
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 32 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item33",
-      "difficulty": 1.3
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 33 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item34",
-      "difficulty": 1.4
+      "difficulty": -1.100998,
+      "difficulty_level": "O'rtacha",
+      "description": "Savol 34 - O'rtacha qiyinchilik"
     },
     {
       "item_id": "Item35",
-      "difficulty": 1.5
+      "difficulty": 0.026752,
+      "difficulty_level": "Qiyin",
+      "description": "Savol 35 - Qiyin qiyinchilik"
     },
     {
       "item_id": "Item36",
-      "difficulty": 1.6
+      "difficulty": 0.454637,
+      "difficulty_level": "Qiyin",
+      "description": "Savol 36 - Qiyin qiyinchilik"
     },
     {
       "item_id": "Item37",
-      "difficulty": 1.7
+      "difficulty": 0.718056,
+      "difficulty_level": "Qiyin",
+      "description": "Savol 37 - Qiyin qiyinchilik"
     },
     {
       "item_id": "Item38",
-      "difficulty": 1.8
+      "difficulty": 0.915147,
+      "difficulty_level": "Qiyin",
+      "description": "Savol 38 - Qiyin qiyinchilik"
     },
     {
       "item_id": "Item39",
-      "difficulty": 1.9
+      "difficulty": 1.076801,
+      "difficulty_level": "Qiyin",
+      "description": "Savol 39 - Qiyin qiyinchilik"
     },
     {
       "item_id": "Item40",
-      "difficulty": 2.0
+      "difficulty": 1.216911,
+      "difficulty_level": "Qiyin",
+      "description": "Savol 40 - Qiyin qiyinchilik"
     },
     {
       "item_id": "Item41",
-      "difficulty": 2.1
+      "difficulty": 1.343032,
+      "difficulty_level": "Qiyin",
+      "description": "Savol 41 - Qiyin qiyinchilik"
     },
     {
       "item_id": "Item42",
-      "difficulty": 2.2
+      "difficulty": 1.459831,
+      "difficulty_level": "Qiyin",
+      "description": "Savol 42 - Qiyin qiyinchilik"
     },
     {
       "item_id": "Item43",
-      "difficulty": 2.3
+      "difficulty": 1.570497,
+      "difficulty_level": "Juda qiyin",
+      "description": "Savol 43 - Juda qiyin qiyinchilik"
     },
     {
       "item_id": "Item44",
-      "difficulty": 2.4
+      "difficulty": 1.677421,
+      "difficulty_level": "Juda qiyin",
+      "description": "Savol 44 - Juda qiyin qiyinchilik"
     },
     {
       "item_id": "Item45",
-      "difficulty": 2.5
+      "difficulty": 1.782569,
+      "difficulty_level": "Juda qiyin",
+      "description": "Savol 45 - Juda qiyin qiyinchilik"
     },
     {
       "item_id": "Item46",
-      "difficulty": 2.6
+      "difficulty": 1.887716,
+      "difficulty_level": "Juda qiyin",
+      "description": "Savol 46 - Juda qiyin qiyinchilik"
     },
     {
       "item_id": "Item47",
-      "difficulty": 2.7
+      "difficulty": 1.99464,
+      "difficulty_level": "Juda qiyin",
+      "description": "Savol 47 - Juda qiyin qiyinchilik"
     },
     {
       "item_id": "Item48",
-      "difficulty": 2.8
+      "difficulty": 2.105307,
+      "difficulty_level": "Juda qiyin",
+      "description": "Savol 48 - Juda qiyin qiyinchilik"
     },
     {
       "item_id": "Item49",
-      "difficulty": 2.9
+      "difficulty": 2.222105,
+      "difficulty_level": "Juda qiyin",
+      "description": "Savol 49 - Juda qiyin qiyinchilik"
     },
     {
       "item_id": "Item50",
-      "difficulty": 3.0
+      "difficulty": 2.348226,
+      "difficulty_level": "Juda qiyin",
+      "description": "Savol 50 - Juda qiyin qiyinchilik"
     },
     {
       "item_id": "Item51",
-      "difficulty": 3.1
+      "difficulty": 2.488336,
+      "difficulty_level": "Juda qiyin",
+      "description": "Savol 51 - Juda qiyin qiyinchilik"
     },
     {
       "item_id": "Item52",
-      "difficulty": 3.2
+      "difficulty": 2.64999,
+      "difficulty_level": "Juda qiyin",
+      "description": "Savol 52 - Juda qiyin qiyinchilik"
     },
     {
       "item_id": "Item53",
-      "difficulty": 3.3
+      "difficulty": 2.847082,
+      "difficulty_level": "Juda qiyin",
+      "description": "Savol 53 - Juda qiyin qiyinchilik"
     },
     {
       "item_id": "Item54",
-      "difficulty": 3.4
+      "difficulty": 3.1105,
+      "difficulty_level": "Juda qiyin",
+      "description": "Savol 54 - Juda qiyin qiyinchilik"
     },
     {
       "item_id": "Item55",
-      "difficulty": 3.5
+      "difficulty": 3.538385,
+      "difficulty_level": "Juda qiyin",
+      "description": "Savol 55 - Juda qiyin qiyinchilik"
     }
   ],
   "persons": [
     {
       "person_index": 1,
-      "eap": -0.9,
-      "se": 0.11
+      "eap": 100.0,
+      "se": 0.0,
+      "certification_score": 100,
+      "certification_level": "Ajoyib (A)",
+      "performance_category": "Yuqori daraja",
+      "detailed_feedback": "🎉 Ajoyib natija! Siz bu sohada juda yaxshi bilimga egasiz. Natija aniq va ishonchli. 💡 Tavsiya: Bilimingizni boshqalar bilan ulashing va o'rgating."
     },
     {
       "person_index": 2,
-      "eap": -0.8,
-      "se": 0.12
+      "eap": 98.181818,
+      "se": 0.668043,
+      "certification_score": 100,
+      "certification_level": "Ajoyib (A)",
+      "performance_category": "Yuqori daraja",
+      "detailed_feedback": "🎉 Ajoyib natija! Siz bu sohada juda yaxshi bilimga egasiz. Natija aniq va ishonchli. 💡 Tavsiya: Bilimingizni boshqalar bilan ulashing va o'rgating."
     },
     {
       "person_index": 3,
-      "eap": -0.7,
-      "se": 0.13
+      "eap": 96.363636,
+      "se": 0.935966,
+      "certification_score": 100,
+      "certification_level": "Ajoyib (A)",
+      "performance_category": "Yuqori daraja",
+      "detailed_feedback": "🎉 Ajoyib natija! Siz bu sohada juda yaxshi bilimga egasiz. Natija aniq va ishonchli. 💡 Tavsiya: Bilimingizni boshqalar bilan ulashing va o'rgating."
     },
     {
       "person_index": 4,
-      "eap": -0.6,
-      "se": 0.14
+      "eap": 94.545455,
+      "se": 1.135454,
+      "certification_score": 100,
+      "certification_level": "Ajoyib (A)",
+      "performance_category": "Yuqori daraja",
+      "detailed_feedback": "🎉 Ajoyib natija! Siz bu sohada juda yaxshi bilimga egasiz. Natija aniq va ishonchli. 💡 Tavsiya: Bilimingizni boshqalar bilan ulashing va o'rgating."
     },
     {
       "person_index": 5,
-      "eap": -0.5,
-      "se": 0.15
+      "eap": 92.727273,
+      "se": 1.298442,
+      "certification_score": 100,
+      "certification_level": "Ajoyib (A)",
+      "performance_category": "Yuqori daraja",
+      "detailed_feedback": "🎉 Ajoyib natija! Siz bu sohada juda yaxshi bilimga egasiz. Natija aniq va ishonchli. 💡 Tavsiya: Bilimingizni boshqalar bilan ulashing va o'rgating."
     },
     {
       "person_index": 6,
-      "eap": -0.4,
-      "se": 0.16
+      "eap": 90.909091,
+      "se": 1.437399,
+      "certification_score": 100,
+      "certification_level": "Ajoyib (A)",
+      "performance_category": "Yuqori daraja",
+      "detailed_feedback": "🎉 Ajoyib natija! Siz bu sohada juda yaxshi bilimga egasiz. Natija aniq va ishonchli. 💡 Tavsiya: Bilimingizni boshqalar bilan ulashing va o'rgating."
     },
     {
       "person_index": 7,
-      "eap": -0.3,
-      "se": 0.17
+      "eap": 89.090909,
+      "se": 1.558766,
+      "certification_score": 98,
+      "certification_level": "Ajoyib (A)",
+      "performance_category": "Yuqori daraja",
+      "detailed_feedback": "🎉 Ajoyib natija! Siz bu sohada juda yaxshi bilimga egasiz. Natija aniq va ishonchli. 💡 Tavsiya: Bilimingizni boshqalar bilan ulashing va o'rgating."
     },
     {
       "person_index": 8,
-      "eap": -0.2,
-      "se": 0.18
+      "eap": 87.272727,
+      "se": 1.666391,
+      "certification_score": 95,
+      "certification_level": "Ajoyib (A)",
+      "performance_category": "Yuqori daraja",
+      "detailed_feedback": "🎉 Ajoyib natija! Siz bu sohada juda yaxshi bilimga egasiz. Natija aniq va ishonchli. 💡 Tavsiya: Bilimingizni boshqalar bilan ulashing va o'rgating."
     },
     {
       "person_index": 9,
-      "eap": -0.1,
-      "se": 0.19
+      "eap": 85.454545,
+      "se": 1.762793,
+      "certification_score": 92,
+      "certification_level": "Ajoyib (A)",
+      "performance_category": "Yuqori daraja",
+      "detailed_feedback": "🎉 Ajoyib natija! Siz bu sohada juda yaxshi bilimga egasiz. Natija aniq va ishonchli. 💡 Tavsiya: Bilimingizni boshqalar bilan ulashing va o'rgating."
     },
     {
       "person_index": 10,
-      "eap": 0.0,
-      "se": 0.2
+      "eap": 83.636364,
+      "se": 1.849726,
+      "certification_score": 89,
+      "certification_level": "Yaxshi (B)",
+      "performance_category": "O'rtacha yuqori",
+      "detailed_feedback": "👍 Yaxshi natija! Sizning bilimingiz yuqori darajada. Natija aniq va ishonchli. 💡 Tavsiya: Eng murakkab savollarni hal qilishda tajriba orttiring."
     },
     {
       "person_index": 11,
-      "eap": 0.1,
-      "se": 0.21
+      "eap": 81.818182,
+      "se": 1.928473,
+      "certification_score": 86,
+      "certification_level": "Yaxshi (B)",
+      "performance_category": "O'rtacha yuqori",
+      "detailed_feedback": "👍 Yaxshi natija! Sizning bilimingiz yuqori darajada. Natija aniq va ishonchli. 💡 Tavsiya: Eng murakkab savollarni hal qilishda tajriba orttiring."
     },
     {
       "person_index": 12,
-      "eap": 0.2,
-      "se": 0.22
+      "eap": 80.0,
+      "se": 2.0,
+      "certification_score": 83,
+      "certification_level": "Yaxshi (B)",
+      "performance_category": "O'rtacha yuqori",
+      "detailed_feedback": "👍 Yaxshi natija! Sizning bilimingiz yuqori darajada. Natija aniq va ishonchli. 💡 Tavsiya: Eng murakkab savollarni hal qilishda tajriba orttiring."
     },
     {
       "person_index": 13,
-      "eap": 0.3,
-      "se": 0.23
+      "eap": 78.181818,
+      "se": 2.065058,
+      "certification_score": 80,
+      "certification_level": "Yaxshi (B)",
+      "performance_category": "O'rtacha yuqori",
+      "detailed_feedback": "👍 Yaxshi natija! Sizning bilimingiz yuqori darajada. Natija aniq va ishonchli. 💡 Tavsiya: Eng murakkab savollarni hal qilishda tajriba orttiring."
     },
     {
       "person_index": 14,
-      "eap": 0.4,
-      "se": 0.24
+      "eap": 76.363636,
+      "se": 2.12424,
+      "certification_score": 77,
+      "certification_level": "Yaxshi (B)",
+      "performance_category": "O'rtacha yuqori",
+      "detailed_feedback": "👍 Yaxshi natija! Sizning bilimingiz yuqori darajada. Natija aniq va ishonchli. 💡 Tavsiya: Eng murakkab savollarni hal qilishda tajriba orttiring."
     },
     {
       "person_index": 15,
-      "eap": 0.5,
-      "se": 0.25
+      "eap": 74.545455,
+      "se": 2.178027,
+      "certification_score": 75,
+      "certification_level": "Yaxshi (B)",
+      "performance_category": "O'rtacha yuqori",
+      "detailed_feedback": "👍 Yaxshi natija! Sizning bilimingiz yuqori darajada. Natija aniq va ishonchli. 💡 Tavsiya: Eng murakkab savollarni hal qilishda tajriba orttiring."
     },
     {
       "person_index": 16,
-      "eap": 0.6,
-      "se": 0.26
+      "eap": 72.727273,
+      "se": 2.226809,
+      "certification_score": 73,
+      "certification_level": "Qoniqarli (C)",
+      "performance_category": "O'rtacha yuqori",
+      "detailed_feedback": "✅ Qoniqarli natija! Siz asosiy bilimlarni egallagansiz. Natija aniq va ishonchli. 💡 Tavsiya: Murakkab savollarga ko'proq e'tibor bering."
     },
     {
       "person_index": 17,
-      "eap": 0.7,
-      "se": 0.27
+      "eap": 70.909091,
+      "se": 2.270908,
+      "certification_score": 71,
+      "certification_level": "Qoniqarli (C)",
+      "performance_category": "O'rtacha yuqori",
+      "detailed_feedback": "✅ Qoniqarli natija! Siz asosiy bilimlarni egallagansiz. Natija aniq va ishonchli. 💡 Tavsiya: Murakkab savollarga ko'proq e'tibor bering."
     },
     {
       "person_index": 18,
-      "eap": 0.8,
-      "se": 0.28
+      "eap": 69.090909,
+      "se": 2.310594,
+      "certification_score": 69,
+      "certification_level": "Qoniqarli (C)",
+      "performance_category": "O'rtacha",
+      "detailed_feedback": "✅ Qoniqarli natija! Siz asosiy bilimlarni egallagansiz. Natija aniq va ishonchli. 💡 Tavsiya: Murakkab savollarga ko'proq e'tibor bering."
     },
     {
       "person_index": 19,
-      "eap": 0.9,
-      "se": 0.29
+      "eap": 67.272727,
+      "se": 2.346089,
+      "certification_score": 67,
+      "certification_level": "Qoniqarli (C)",
+      "performance_category": "O'rtacha",
+      "detailed_feedback": "✅ Qoniqarli natija! Siz asosiy bilimlarni egallagansiz. Natija aniq va ishonchli. 💡 Tavsiya: Murakkab savollarga ko'proq e'tibor bering."
     },
     {
       "person_index": 20,
-      "eap": 1.0,
-      "se": 0.3
+      "eap": 65.454545,
+      "se": 2.377581,
+      "certification_score": 65,
+      "certification_level": "Qoniqarli (C)",
+      "performance_category": "O'rtacha",
+      "detailed_feedback": "✅ Qoniqarli natija! Siz asosiy bilimlarni egallagansiz. Natija aniq va ishonchli. 💡 Tavsiya: Murakkab savollarga ko'proq e'tibor bering."
     },
     {
       "person_index": 21,
-      "eap": 1.1,
-      "se": 0.31
+      "eap": 63.636364,
+      "se": 2.405228,
+      "certification_score": 63,
+      "certification_level": "Qoniqarli (C)",
+      "performance_category": "O'rtacha",
+      "detailed_feedback": "✅ Qoniqarli natija! Siz asosiy bilimlarni egallagansiz. Natija aniq va ishonchli. 💡 Tavsiya: Murakkab savollarga ko'proq e'tibor bering."
+    },
+    {
+      "person_index": 22,
+      "eap": 61.818182,
+      "se": 2.429162,
+      "certification_score": 61,
+      "certification_level": "Qoniqarli (C)",
+      "performance_category": "O'rtacha",
+      "detailed_feedback": "✅ Qoniqarli natija! Siz asosiy bilimlarni egallagansiz. Natija aniq va ishonchli. 💡 Tavsiya: Murakkab savollarga ko'proq e'tibor bering."
     }
   ],
   "fit": {
     "logLik": -186.808894,
     "AIC": 485.617787,
     "BIC": 544.111044,
-    "n_obs": 21,
+    "n_obs": 22,
     "n_items": 55
-  }
+  },
+  "certification_standards": {
+    "excellent": {
+      "min_score": 90,
+      "max_score": 100,
+      "description": "Ajoyib natija"
+    },
+    "good": {
+      "min_score": 75,
+      "max_score": 89,
+      "description": "Yaxshi natija"
+    },
+    "satisfactory": {
+      "min_score": 60,
+      "max_score": 74,
+      "description": "Qoniqarli natija"
+    },
+    "needs_improvement": {
+      "min_score": 0,
+      "max_score": 59,
+      "description": "Yaxshilash kerak"
+    }
+  },
+  "detailed_analysis": {
+    "overall_statistics": {
+      "total_participants": 22,
+      "total_items": 55,
+      "overall_accuracy": 80.91,
+      "average_score": 80.91,
+      "best_score": 100.0,
+      "worst_score": 61.82
+    },
+    "difficulty_distribution": {
+      "easy_items": 0,
+      "medium_items": 42,
+      "hard_items": 13,
+      "difficulty_balance": "O'zgartirish kerak"
+    },
+    "performance_distribution": {
+      "excellent_count": 9,
+      "good_count": 8,
+      "satisfactory_count": 5,
+      "needs_improvement_count": 0
+    },
+    "recommendations": {
+      "for_participants": "Ko'proq mashq qiling va zaif tomonlaringizni aniqlang",
+      "for_test_design": "Qiyinchilik darajasi balansini yaxshilang",
+      "for_improvement": "Eng ko'p xato qilingan savollarni qayta ko'rib chiqing"
+    }
+  },
+  "timestamp": "2025-08-10T10:45:34.711458"
 }
